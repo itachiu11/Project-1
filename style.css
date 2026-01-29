@@ -1,12 +1,42 @@
 body {
   text-align: center;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/57825361440243db4a4b7830/1656915345343-CX1U062QNY1LAXM47KE3/55794e9f617740728f0181d7a5bab0f3.jpeg?format=2500w);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
+  background-color: rgba(0,0,0, 0.7);
   font-family: sans-serif;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid;
 }
 
-.teaser {
-  margin: 50px;
-  font-style: italic;
+h1 {
+  color:white;
+text-shadow: 3px,3px 0px black;
+font-family: 'luckiest Guy',
+sans-serif;
+margin: 0;
+}
+.categories ul {
+list-style-type: none;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px; 
+}
+
+.intro-text {
+background-color: rgba(255,255,255,0.9);
+color:#333;
+padding:15px;
+margin:20px;
+auto;
+max-width: 600px;
+border-radius: 50px;
+font-weight: bold;
+border: 2px solid #000;
 }
