@@ -28,7 +28,16 @@ flex-direction: column;
 align-items: center;
 gap: 15px; 
 }
+.categories button{
+ background-color:#f1c40f;
+ color:white;
+ border: 3px solid wheat;
+ font-weight: bold;
+ text-transform: uppercase;
 
+
+
+}
 .intro-text {
 background-color: rgba(255,255,255,0.9);
 color:#333;
@@ -39,4 +48,12 @@ max-width: 600px;
 border-radius: 50px;
 font-weight: bold;
 border: 2px solid #000;
+}
+footer {
+background-color: #6a0909;
+font-weight: 700;
+}
+.back-to-top{
+text-decoration: underline;
+
 }
