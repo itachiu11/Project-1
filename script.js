@@ -3,8 +3,20 @@ let categoryID = null;
 // For now, we'll include one hard-coded question in our question bank.
 let questionBank = [
   {
-    question: 'State whose license plate reads "Land of 10,000 Lakes".',
-    answer: "Minnesota"
+    question: "In Naruto, who becomes the 7th Hokage?",
+    answer: "Naruto Uzumaki"
+  },
+   {
+    question: "In One Piece, what is Luffy’s dream?",
+    answer: "To become the Pirate King"
+  },
+   {
+    question: "In One Piece, what is the name of Luffy’s ship?",
+    answer: "Thousand Sunny"
+  },
+  {
+    question: "In My Hero Academia, what is Deku's quirk?",
+    answer: "One For All"
   }
 ];
 let questionIndex = 0;
@@ -24,6 +36,22 @@ function toggleShowAnswer(e) {
   // as an onClick listener on the appropriate button.
   //
   // Write your code below
+  function toggleShowAnswer() {
+  const answerT = document.querySelector(".answer-text");
+  const btn = document.querySelector(".show-answer-btn");
+
+  answerT.classList.toggle("hidden");
+
+  if (answerT.classList.contains("hidden")) {
+    btn.textContent = "Show Answer";
+  } else {
+    btn.textContent = "Hide Answer";
+  }
+}
+
+// Attach to button
+document.querySelector(".show-answer-btn").addEventListener("click", toggleShowAnswer);
+  
 }
 
 function populateQuestion() {
@@ -39,7 +67,16 @@ function populateQuestion() {
   // use the `questionIndex` variable to represent the index.
   //
   // Write your code below
+   const questionT = document.querySelector(".question-text");
+  const answerT = document.querySelector(".answer-text");
+
+    const currentQA = questionBank[questionIndex];
+    questionT.textContent = currentQA.question;
+    answerT.textContent = currentQA.answer;
+     // Make sure the answer is hidden when a new question is shown
+     answerT.classList.add("hidden");
 }
+
 
 // --------------- MILESTONE 4: POPULATE WITH RANDOM QUESTION ---------------------
 
@@ -96,6 +133,7 @@ function appendCategory(categoryObject, categoriesDiv) {
   // back and add that later!
   //
   // Write your code below
+
 }
 
 function appendAllCategoriesToHTML(categories) {
