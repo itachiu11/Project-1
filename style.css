@@ -11,6 +11,7 @@ header {
   padding: 20px;
   margin-bottom: 20px;
   border-bottom: 3px solid;
+  text-align: center;
 }
 
 h1 {
@@ -42,8 +43,8 @@ gap: 15px;
 background-color: rgba(255,255,255,0.9);
 color:#333;
 padding:15px;
-margin:20px;
-auto;
+margin:20px auto;
+
 max-width: 600px;
 border-radius: 50px;
 font-weight: bold;
@@ -104,4 +105,9 @@ button:hover {
 }
 .hidden {
   display: none;
+}
+.categories button.selected {
+  background-color: #e74c3c;
+  color: white;
+  border: 3px solid white;
 }
